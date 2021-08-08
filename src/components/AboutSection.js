@@ -57,7 +57,7 @@ const AboutSectionStyle = styled.div`
     }
     .para {
       margin: 0 auto;
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
     .aboutSection__buttons {
       flex-direction: column;

@@ -39,7 +39,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -8rem;
+    margin-top: -6rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -74,7 +74,7 @@ const HeroStyles = styled.div`
   }
   .hero__scrollDown {
     img {
-      max-height: 70px;
+      max-height: 60px;
     }
   }
   .hero__social-text {
