@@ -46,7 +46,7 @@ const ProjectSectionStyle = styled.div`
       flex-direction: column;
       max-width: 400px;
       margin: 0 auto;
-      margin-top: 7rem;
+      margin-top: 2rem;
       gap: 5rem;
       .projectitem__img {
         width: 100%;

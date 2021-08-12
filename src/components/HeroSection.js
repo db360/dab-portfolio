@@ -16,10 +16,11 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 5rem;
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     position: relative;
     span {
       display: inline-block;
@@ -93,21 +94,22 @@ const HeroStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .hero {
+      margin-top: 5rem;
       min-height: 750px;
     }
     .hero__heading {
       font-size: 1.4rem;
-      margin-bottom: 4rem;
+      margin-bottom: 0rem;
       .hero__name {
         font-size: 4.5rem;
-        padding: 2rem;
+        padding: 5rem;
       }
     }
     .hero__img {
       height: 300px;
     }
     .hero__info {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
     .hero__social {
       left: 0px;
