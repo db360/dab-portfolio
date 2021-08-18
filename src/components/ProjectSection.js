@@ -85,7 +85,7 @@ export default function ProjectSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
-                    url="/projects"
+                    url="https://www.dabmartinez.com/projects"
                   />
                 </SwiperSlide>
               );
