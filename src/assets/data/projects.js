@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
 import CalendarApp from '../images/calendar-app-pic.png';
 import HuluClon from '../images/hulu-clon.png';
 import LandingPage from '../images/Next.js-landing.png';
