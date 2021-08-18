@@ -11,31 +11,28 @@ const projects = [
     name: 'Calendar',
     desc: 'Calendar App, Front End: React, BackEnd: Node.js',
     img: CalendarApp,
-    url: 'https://mern-calendar-dab.herokuapp.com/login',
+    url: 'https://mern-calendar-dab.herokuapp.com',
   },
   {
     id: uuidv4(),
     name: 'Hulu Clon',
     desc: 'Next.Js and React FrontPage, fetching Movie Database to return Pictures from movies',
     img: HuluClon,
+    url: 'https://hulu-clon-react.vercel.app/',
   },
   {
     id: uuidv4(),
     name: 'Landing Page',
     desc: 'Full Responsive Front End of a Business landing Page with Next.Js and React',
     img: LandingPage,
+    url: 'https://loving-albattani-ec8105.netlify.app/',
   },
   {
     id: uuidv4(),
     name: 'Blog Cafe',
     desc: 'Bar/Restaurant WebPage with HTML, CSS and JavaScript .',
     img: BlogCafe,
-  },
-  {
-    id: uuidv4(),
-    name: 'Tracking Soft',
-    desc: 'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    url: 'https://www.blogcafe.dabmartinez.com/',
   },
 ];
 
