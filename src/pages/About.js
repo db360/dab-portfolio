@@ -86,21 +86,25 @@ export default function About() {
             </h2>
             <div className="about__info">
               <Ptext>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                hic rem tempora vel aspernatur, odio officia esse optio! Quidem
-                praesentium quasi aliquam repellendus vel exercitationem,
-                voluptate porro blanditiis in quo!
+                I grew up in a music-loving family, this, together with my
+                passion for computers and technology, introduced me to music
+                production (Daw's, Synths,Drum Machines, etc). With my first
+                salary, I bought my first set of turntables, and since then
+                turntablism has been my passion.
                 <br /> <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique harum porro facilis animi accusantium totam reiciendis
-                soluta nam. Nulla laudantium impedit distinctio fugit esse!
-                Voluptas.
+                After high school, I graduated as a sound technician at the
+                I.E.S. Politécnico Jesús Marín in Málaga. Always driven by my
+                passion for music, I have done many different jobs, car
+                salesman, receptionist, waiter, cook, transporter, audio-visual
+                equipment assembly, sound technician... all of which have been a
+                bridge to the creation of my small audio-visual studio.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                sequi dignissimos accusamus vero ullam reprehenderit perferendis
-                est mollitia culpa amet hic voluptatum voluptatem quo,
-                laudantium laborum ipsum officiis quam soluta!
+                Lately, under lockdown after my last job, I've been studying web
+                development, focusing on technologies like HTML, CSS3, SASS,
+                JavaScript, MySQL, MongoDb, node.js and React.js. Also the
+                different applications of the BlockChain to the audio-visual
+                world.
               </Ptext>
             </div>
             <Button btnText="Download CV" btnLink="#" />
@@ -118,8 +122,8 @@ export default function About() {
             />
             <AboutInfoItem title="School" items={['I.E.S Salduba']} />
             <AboutInfoItem
-              title="College"
-              items={['I.E.S Salduba. I.E.S Politécnico Jesús Marín']}
+              title="Courses"
+              items={['Web Development (CSS, HTML, SASS, JS)', 'React.js']}
             />
           </div>
           <div className="about__info-item">

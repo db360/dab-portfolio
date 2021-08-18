@@ -17,6 +17,9 @@ const AboutSectionStyle = styled.div`
   .aboutSection__right {
     flex: 1;
   }
+  .aboutSection__right {
+    margin-left: 5rem;
+  }
   .section__title {
     text-align: left;
   }
@@ -52,6 +55,7 @@ const AboutSectionStyle = styled.div`
     .aboutSection__right {
       margin-top: 3rem;
     }
+
     .section__title {
       text-align: center;
     }

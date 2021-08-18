@@ -1,34 +1,35 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import CalendarApp from '../images/calendar-app-pic.png';
+import HuluClon from '../images/hulu-clon.png';
+import LandingPage from '../images/Next.js-landing.png';
+import BlogCafe from '../images/Blog-Cafe.png';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
-    desc: 'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+    name: 'Calendar',
+    desc: 'Calendar App, Front End: React, BackEnd: Node.js',
+    img: CalendarApp,
+    url: 'https://mern-calendar-dab.herokuapp.com/login',
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
-    desc: 'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+    name: 'Hulu Clon',
+    desc: 'Next.Js and React FrontPage, fetching Movie Database to return Pictures from movies',
+    img: HuluClon,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
-    desc: 'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+    name: 'Landing Page',
+    desc: 'Full Responsive Front End of a Business landing Page with Next.Js and React',
+    img: LandingPage,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc: 'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+    name: 'Blog Cafe',
+    desc: 'Bar/Restaurant WebPage with HTML, CSS and JavaScript .',
+    img: BlogCafe,
   },
   {
     id: uuidv4(),

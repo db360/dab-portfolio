@@ -16,7 +16,6 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 5rem;
   }
   .hero__heading {
     font-size: 2rem;
@@ -40,7 +39,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -6rem;
+    margin-top: 5rem;
   }
   .hero__social,
   .hero__scrollDown {

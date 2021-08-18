@@ -45,46 +45,44 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
 
   return (
-    <div>
-      <FormStyles>
-        <div className="form-group">
-          <label htmlFor="name">
-            Your Name
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            Email
-            <input
-              type="text"
-              name="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            Your Text
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </label>
-        </div>
-        <button type="submit">Send</button>
-      </FormStyles>
-    </div>
+    <FormStyles>
+      <div className="form-group">
+        <label htmlFor="name">
+          Your Name
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">
+          Email
+          <input
+            type="text"
+            name="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="message">
+          Your Text
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </label>
+      </div>
+      <button type="submit">Send</button>
+    </FormStyles>
   );
 }
