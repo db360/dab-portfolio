@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SectionTittleStyle = styled.div`
+const SectionTitleStyle = styled.div`
   text-align: center;
   p {
     font-family: 'Roboto Mono';
@@ -23,14 +23,14 @@ const SectionTittleStyle = styled.div`
   }
 `;
 
-export default function SectionTittle({
+export default function SectionTitle({
   subheading = 'This is Subheading',
   heading = 'This is Heading',
 }) {
   return (
-    <SectionTittleStyle className="section__title">
+    <SectionTitleStyle className="section__title">
       <p>{subheading}</p>
       <h2>{heading}</h2>
-    </SectionTittleStyle>
+    </SectionTitleStyle>
   );
 }

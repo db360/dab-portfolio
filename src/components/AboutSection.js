@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SectionTittle from './SectionTittle';
+import SectionTitle from './SectionTitle';
 import Ptext from './Ptext';
 import { Button } from './Button';
 import AboutImg from '../assets/images/about-sec-img.png';
@@ -80,7 +80,7 @@ export default function AboutSection() {
     <AboutSectionStyle>
       <div className="container">
         <div className="aboutSection__left">
-          <SectionTittle
+          <SectionTitle
             subheading="Let me introduce myself"
             heading="About Me"
           />

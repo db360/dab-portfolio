@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import styled from 'styled-components';
 import { MdArrowBack, MdArrowForward } from 'react-icons/md';
-import SectionTittle from './SectionTittle';
+import SectionTittle from './SectionTitle';
 import Ptext from './Ptext';
 import testimonials from '../assets/data/testimonials';
 

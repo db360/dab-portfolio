@@ -3,7 +3,7 @@ import { MdEmail } from 'react-icons/md';
 import styled from 'styled-components';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
-import SectionTittle from './SectionTittle';
+import SectionTitle from './SectionTitle';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -54,7 +54,7 @@ export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className="container">
-        <SectionTittle heading="Contact" subheading="Get in Touch" />
+        <SectionTitle heading="Contact" subheading="Get in Touch" />
         <div className="contactsection__wrapper">
           <div className="left">
             <ContactInfoItem icon={<MdEmail />} text="da.b@dabmartinez.com" />

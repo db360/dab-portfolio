@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import styled from 'styled-components';
-import SectionTittle from './SectionTittle';
+import SectionTitle from './SectionTitle';
 import projects from '../assets/data/projects';
 import ProjectItem from './ProjectItem';
 import 'swiper/swiper-bundle.min.css';
@@ -11,7 +11,7 @@ SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
   padding: 10rem 0;
-  .projects__allitems {
+  .projects__allItems {
     display: flex;
     gap: 3rem;
     margin-top: 5rem;
@@ -42,7 +42,7 @@ const ProjectSectionStyle = styled.div`
     font-size: 2rem;
   }
   @media only screen and (max-width: 768px) {
-    .projects__allitems {
+    .projects__allItems {
       flex-direction: column;
       max-width: 400px;
       margin: 0 auto;
@@ -59,19 +59,22 @@ export default function ProjectSection() {
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTittle heading="Projects" subheading="some of my works" />
-        <div className="projects__allitems">
+        <SectionTitle subheading="some of my recent works" heading="Projects" />
+        <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
             navigation
             breakpoints={{
+              // when window width is >= 640px
               640: {
                 slidesPerView: 1,
               },
+              // when window width is >= 768px
               768: {
                 slidesPerView: 2,
               },
+              // when window width is >= 1200px
               1200: {
                 slidesPerView: 3,
               },
@@ -85,7 +88,6 @@ export default function ProjectSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
-                    url="https://www.dabmartinez.com/projects"
                   />
                 </SwiperSlide>
               );

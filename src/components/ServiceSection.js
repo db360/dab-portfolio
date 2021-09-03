@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdCode, MdDesktopMac, MdAlbum } from 'react-icons/md';
 import styled from 'styled-components';
-import SectionTittle from './SectionTittle';
+import SectionTittle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 
 const ServicesItemsStyles = styled.div`

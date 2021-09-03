@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/md';
-import SectionTittle from '../components/SectionTittle';
+import SectionTitle from '../components/SectionTitle';
+import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
-import projects from '../assets/data/projects';
 
-const ProjectsStyles = styled.div`
+const ProjectStyle = styled.div`
   padding: 10rem 0;
-  .projects__allitems {
+  .projects__allItems {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
   }
-  .projects__searchbar {
+  .projects__searchBar {
     position: relative;
     width: 300px;
     margin-top: 5rem;
   }
-  .projects__searchbar input {
+  .projects__searchBar input {
     width: 100%;
     font-size: 2rem;
     padding: 0.8rem;
@@ -27,18 +27,19 @@ const ProjectsStyles = styled.div`
     outline: none;
     border: none;
   }
-  .projects__searchbar .searchicon {
+  .projects__searchBar .searchIcon {
     position: absolute;
     width: 2rem;
+
     right: 1rem;
   }
-  .projects__searchbar .searchicon path {
+  .projects__searchBar .searchIcon path {
     color: var(--deep-dark);
   }
   @media only screen and (max-width: 768px) {
-    .projects__searchbar,
-    .projects__searchbar form,
-    .projects__searchbar input {
+    .projects__searchBar,
+    .projects__searchBar form,
+    .projects__searchBar input {
       width: 100%;
     }
   }
@@ -46,31 +47,31 @@ const ProjectsStyles = styled.div`
 
 export default function Projects() {
   const [searchText, setSearchText] = useState('');
-  const [projectData, setProjectData] = useState(projects);
-
+  const [projectsData, setProjectsData] = useState(ProjectsInfo);
   useEffect(() => {
     if (searchText === '') return;
-    setProjectData(() =>
-      projects.filter((item) =>
+    setProjectsData(() =>
+      ProjectsInfo.filter((item) =>
         item.name.toLowerCase().match(searchText.toLowerCase())
       )
     );
   }, [searchText]);
-
-  function handleChange(e) {
+  const handleChange = (e) => {
     e.preventDefault();
     setSearchText(e.target.value);
     if (!e.target.value.length > 0) {
-      setProjectData(projects);
+      setProjectsData(ProjectsInfo);
     }
-  }
-
+  };
   return (
     <>
-      <ProjectsStyles>
+      <ProjectStyle>
         <div className="container">
-          <SectionTittle heading="Projects" subheading="Some of my projects" />
-          <div className="projects__searchbar">
+          <SectionTitle
+            heading="Projects"
+            subheading="some of my recent works"
+          />
+          <div className="projects__searchBar">
             <form>
               <input
                 type="text"
@@ -78,22 +79,21 @@ export default function Projects() {
                 onChange={handleChange}
                 placeholder="Project Name"
               />
-              <MdSearch className="searchicon" />
+              <MdSearch className="searchIcon" />
             </form>
           </div>
-          <div className="projects__allitems">
-            {projectData.map((item) => (
+          <div className="projects__allItems">
+            {projectsData.map((item) => (
               <ProjectItem
                 key={item.id}
                 title={item.name}
                 desc={item.desc}
                 img={item.img}
-                url={item.url}
               />
             ))}
           </div>
         </div>
-      </ProjectsStyles>
+      </ProjectStyle>
     </>
   );
 }

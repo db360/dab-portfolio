@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import projectImg from '../assets/images/projectImg.png';
+import ProjectImg from '../assets/images/about-page-img.png';
+import projects from '../assets/data/projects';
 
-const ProjectItemStyle = styled.div`
-  .projectitem__img {
+const ProjectItemStyles = styled.div`
+  .projectItem__img {
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -15,16 +16,16 @@ const ProjectItemStyle = styled.div`
       height: 100%;
     }
   }
-  .projectitem__info {
+  .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 12px;
   }
-  .projectitem__title {
+  .projectItem__title {
     font-size: 2.2.rem;
   }
-  .projectitem__desc {
+  .projectItem__desc {
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
@@ -37,22 +38,21 @@ const ProjectItemStyle = styled.div`
 `;
 
 export default function ProjectItem({
-  img = projectImg,
+  img = ProjectImg,
   title = 'Project Name',
-  desc = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, dignissimos!',
-  url = '',
+  desc = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, animi.',
 }) {
   return (
-    <ProjectItemStyle>
-      <a href={url} className="projectitem__img">
-        <img src={img} alt="imagen proyecto 1" />
-      </a>
-      <div className="projectitem__info">
-        <Link>
-          <h3 className="projectitem__title">{title}</h3>
+    <ProjectItemStyles>
+      <Link to="/projects" className="projectItem__img">
+        <img src={img} alt="project img" />
+      </Link>
+      <div className="projectItem__info">
+        <Link to={projects.url}>
+          <h3 className="projectItem__title">{title}</h3>
         </Link>
-        <p className="projectitem__desc">{desc}</p>
+        <p className="projectItem__desc">{desc}</p>
       </div>
-    </ProjectItemStyle>
+    </ProjectItemStyles>
   );
 }
